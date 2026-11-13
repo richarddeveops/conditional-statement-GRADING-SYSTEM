@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polytechnic grading system</title>
+    <meta name="theme-color" content="#101820">
+    <title>Polytechnic Grading System</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="polytechnic.css">
 </head>
 <body>
-    <ul>
-            <li><a href="secondary.html"><button class="a" >Secondary</button></a></li>
-            <li><a href="university.html"><button class="a">University</button></a></li>
-            <li><a href="polytechnic.html"><button class="a"style=" background-color: whitesmoke; border: 1px solid transparent; color: black;">Polytechnic</button></a></li>
-    </ul>
-    <h2>Polytechnic Grading System</h2>
-    <div class="grading-system">
-        <p>Enter your score:</p>
-        <input type="number" id="score" placeholder="Enter score"><br>
-        <button id="check-grade" onclick="polytechnic()">Check Grade</button>
-        <p id="displayarea"></p>
-    </div>
+    <header class="site-header">
+        <a class="brand" href="index.html">Grade<span>Guide</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="nav-link" href="secondary.html">Secondary</a>
+            <a class="nav-link" href="university.html">University</a>
+            <a class="nav-link" href="polytechnic.html" aria-current="page">Polytechnic</a>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="grading-card" aria-labelledby="page-title">
+            <p class="eyebrow">School grading scale</p>
+            <h1 id="page-title">Polytechnic</h1>
+            <p class="page-description">Enter your GPA on a 0.00 to 4.00 scale to check your grade.</p>
+            <div class="score-field">
+                <label for="score">Your GPA</label>
+                <input type="number" id="score" min="0" max="4" step="any" placeholder="e.g. 3.50">
+            </div>
+            <button class="submit-button" id="check-grade" type="button" onclick="polytechnic()">Check grade <span aria-hidden="true">&rarr;</span></button>
+            <p class="grade-result" id="displayarea" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
     <script src="polytechnic.js"></script>
 </body>
 </html>
