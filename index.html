@@ -3,18 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradin system</title>
+    <meta name="theme-color" content="#101820">
+    <title>Nigeria Grading System</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Nigeria Grading system</h1>
-    <nav>
-        <ul>
-            <li><a href="secondary.html"><button class="a">Secondary</button></a></li>
-            <li><a href="university.html"><button class="a">University</button></a></li>
-            <li><a href="polytechnic.html"><button class="a">Polytechnic</button></a></li>
-        </ul>
-        <p id="grading-system">Grading system</p>
-    </nav>
+<body class="home-page">
+    <header class="site-header">
+        <a class="brand" href="index.html">Grade<span>Guide</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="nav-link" href="secondary.html">Secondary</a>
+            <a class="nav-link" href="university.html">University</a>
+            <a class="nav-link" href="polytechnic.html">Polytechnic</a>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero-card">
+            <p class="eyebrow">A clearer way to check your results</p>
+            <h1>Nigeria <span>Grading System</span></h1>
+            <p class="hero-description">Choose your school level, enter your score, and see the matching grade.</p>
+            <div class="school-options">
+                <a class="school-card" href="secondary.html">
+                    <span class="school-number">01</span>
+                    <span class="school-name">Secondary school</span>
+                    <span class="school-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="school-card" href="university.html">
+                    <span class="school-number">02</span>
+                    <span class="school-name">University</span>
+                    <span class="school-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="school-card" href="polytechnic.html">
+                    <span class="school-number">03</span>
+                    <span class="school-name">Polytechnic</span>
+                    <span class="school-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </section>
+        <p class="home-note">Select the grading scale that matches your institution.</p>
+    </main>
 </body>
 </html>
