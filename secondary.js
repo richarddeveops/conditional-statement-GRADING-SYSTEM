@@ -1,6 +1,9 @@
 function secondary(){
     let score = document.getElementById('score').value
     let displayarea = document.getElementById('displayarea')
+    if (score == ''){
+        displayarea.innerHTML = "Please enter your score"
+    }
     if (score >= 70 && score <= 100){
         displayarea.innerHTML = "Grade: A"
     }else if (score >= 60 && score <= 69){
@@ -12,11 +15,8 @@ function secondary(){
     }else if (score >= 40 && score <= 44){
         displayarea.innerHTML = "Grade: E"
     }else if (score >= 0 && score <= 39){
-        displayarea.innerHTML = "Grade: F"
+        displayarea.innerHTML = "Grade: F" 
     }else{
         displayarea.innerHTML = "Invalid input, please enter a number between 0 and 100."
-    }
-    if (score == ''){
-        displayarea.innerHTML = "Please enter your score"
     }
 }

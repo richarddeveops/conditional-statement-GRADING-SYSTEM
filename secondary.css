@@ -36,6 +36,8 @@ body {
                 padding: 20px;
                 background-color: transparent;
                 border: 1px solid white;
+                color: white;
+                border-radius: 10px;
             }
             button {
                 padding: 15px;
