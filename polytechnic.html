@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polytechnic grading system</title>
-    <style>
-        body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assets/polytechnics.jpg) no-repeat;
-    background-size: cover;
-    color: white;
-}
-    </style>
+    <link rel="stylesheet" href="polytechnic.css">
 </head>
 <body>
-    
+    <ul>
+            <li><a href="secondary.html"><button class="a" >Secondary</button></a></li>
+            <li><a href="university.html"><button class="a">University</button></a></li>
+            <li><a href="polytechnic.html"><button class="a"style=" background-color: whitesmoke; border: 1px solid transparent; color: black;">Polytechnic</button></a></li>
+    </ul>
+    <h2>Polytechnic Grading System</h2>
+    <div class="grading-system">
+        <p>Enter your score:</p>
+        <input type="number" id="score" placeholder="Enter score"><br>
+        <button id="check-grade" onclick="polytechnic()">Check Grade</button>
+        <p id="displayarea"></p>
+    </div>
+    <script src="polytechnic.js"></script>
 </body>
 </html>
