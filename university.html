@@ -12,8 +12,20 @@
     color: white;
 }
     </style>
+    <link rel="stylesheet" href="university.css">
 </head>
 <body>
-    
+    <ul>
+            <li><a href="secondary.html"><button class="a" >Secondary</button></a></li>
+            <li><a href="university.html"><button class="a" style="background-color: whitesmoke; border: 1px solid transparent; color: black;">University</button></a></li>
+            <li><a href="polytechnic.html"><button class="a">Polytechnic</button></a></li>
+    </ul>
+    <h1>University Grading System</h1>
+    <div class="grading-system">
+        <input type="number" id="score" placeholder="Enter your score">
+        <button onclick="university()">Submit</button>
+        <p id="displayarea"></p>
+    </div>
+    <script src="university.js"></script>
 </body>
 </html>
