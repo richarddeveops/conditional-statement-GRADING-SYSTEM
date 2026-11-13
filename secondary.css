@@ -1,51 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assets/secondary.jpg) no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
+    background-image:
+        linear-gradient(115deg, rgba(10, 18, 22, 0.9), rgba(12, 24, 28, 0.58)),
+        url("./assets/secondary.jpg");
 }
-.a {
-                text-decoration: none;
-                color: white;
-                background-color: transparent;
-                padding: 10px 20px;
-                border: 1px solid white;
-                border-radius: 5px;
-                font-size: 20px;
-                transition: all 1.3s ease;
-                &:hover {
-                    background-color: white;
-                    border: 1px solid white;
-                    color: black;
-                }
-            }
-            ul {
-        justify-content: right;
-        display: flex;
-        li {
-            list-style: none;
-            margin: 0 10px;
-        }
-        }
-
-        .grading-system {
-            font-size: 30px;
-            margin-top: 20px;
-            input {
-                padding: 20px;
-                background-color: transparent;
-                border: 1px solid white;
-                color: white;
-                border-radius: 10px;
-            }
-            button {
-                padding: 15px;
-                margin-top: 20px;
-                color: white;
-                background-color: transparent;
-                border: 1px solid white;
-                border-radius: 10px;
-                justify-content: center;
-            }
-        }
