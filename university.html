@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University grading system</title>
-    <style>
-        body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assets/universities.jpg) no-repeat;
-    background-size: cover;
-    color: white;
-}
-    </style>
+    <meta name="theme-color" content="#101820">
+    <title>University Grading System</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="university.css">
 </head>
 <body>
-    <ul>
-            <li><a href="secondary.html"><button class="a" >Secondary</button></a></li>
-            <li><a href="university.html"><button class="a" style="background-color: whitesmoke; border: 1px solid transparent; color: black;">University</button></a></li>
-            <li><a href="polytechnic.html"><button class="a">Polytechnic</button></a></li>
-    </ul>
-    <h1>University Grading System</h1>
-    <div class="grading-system">
-        <input type="number" id="score" placeholder="Enter your score">
-        <button onclick="university()">Submit</button>
-        <p id="displayarea"></p>
-    </div>
+    <header class="site-header">
+        <a class="brand" href="index.html">Grade<span>Guide</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="nav-link" href="secondary.html">Secondary</a>
+            <a class="nav-link" href="university.html" aria-current="page">University</a>
+            <a class="nav-link" href="polytechnic.html">Polytechnic</a>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="grading-card" aria-labelledby="page-title">
+            <p class="eyebrow">School grading scale</p>
+            <h1 id="page-title">University</h1>
+            <p class="page-description">Enter your GPA on a 0.00 to 5.00 scale to check your grade.</p>
+            <div class="score-field">
+                <label for="score">Your GPA</label>
+                <input type="number" id="score" min="0" max="5" step="any" placeholder="e.g. 4.50">
+            </div>
+            <button class="submit-button" type="button" onclick="university()">Check grade <span aria-hidden="true">&rarr;</span></button>
+            <p class="grade-result" id="displayarea" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
     <script src="university.js"></script>
 </body>
 </html>
