@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
 :root {
     color-scheme: dark;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     color: #f5f7f8;
     background: #101820;
     font-synthesis: none;
@@ -272,6 +274,137 @@ h1 {
     line-height: 1.5;
 }
 
+:root {
+    color-scheme: light;
+    --ink: #0d0d0d;
+    --muted: #565654;
+    --accent: #d92b2b;
+    --panel: #fff;
+    --line: #d8d6d0;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--ink);
+    background: #f4f3ef;
+}
+
+body {
+    color: var(--ink);
+    background-color: #f4f3ef;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.home-page {
+    background-image:
+        linear-gradient(90deg, rgb(244 243 239 / 97%) 0 56%, rgb(244 243 239 / 74%) 100%),
+        url("./assets/background.jpg");
+}
+
+.site-header { border-color: #d8d6d0; }
+
+.brand {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: -.06em;
+}
+
+.brand span,
+.eyebrow,
+.hero-card h1 span,
+.school-arrow,
+.grade-result {
+    color: var(--accent);
+}
+
+.nav-link {
+    border-radius: 0;
+    color: #242424;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link[aria-current="page"] {
+    border-color: var(--accent);
+    background: transparent;
+    color: var(--accent);
+}
+
+.hero-card h1,
+.grading-card h1 {
+    font-family: "Archivo Black", sans-serif;
+    letter-spacing: -.075em;
+}
+
+.hero-card h1 span { display: block; }
+
+.hero-description,
+.page-description,
+.home-note { color: #565654; }
+
+.school-options {
+    gap: 0;
+    border-top: 2px solid #0d0d0d;
+}
+
+.school-card {
+    min-height: 145px;
+    border: 0;
+    border-bottom: 1px solid #bdbbb4;
+    border-radius: 0;
+    background: transparent;
+}
+
+.school-card:nth-child(2) { margin-left: 9%; }
+.school-card:nth-child(3) { margin-left: 18%; }
+
+.school-card:hover,
+.school-card:focus-visible {
+    transform: none;
+    border-color: var(--accent);
+    background: #eeece7;
+}
+
+.school-number {
+    color: var(--accent);
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.school-name {
+    color: #0d0d0d;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.grading-card {
+    border: 0;
+    border-top: 4px solid var(--accent);
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+}
+
+.score-field input {
+    border: 0;
+    border-bottom: 2px solid #0d0d0d;
+    border-radius: 0;
+    background: #f4f3ef;
+    color: #0d0d0d;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.score-field input:focus {
+    border-color: var(--accent);
+    box-shadow: none;
+}
+
+.submit-button {
+    border-radius: 0;
+    background: var(--accent);
+    color: #fff;
+}
+
+.submit-button:hover,
+.submit-button:focus-visible { background: #b51e1e; }
+
 @media (max-width: 640px) {
     .site-header {
         width: min(100% - 32px, 1120px);
@@ -341,5 +474,162 @@ h1 {
     *::after {
         scroll-behavior: auto !important;
         transition-duration: 0.01ms !important;
+    }
+}
+
+:root {
+    color-scheme: light;
+    --ink: #14171a;
+    --muted: #656a6d;
+    --accent: #315949;
+    --panel: #fff;
+    --line: #e2e0d8;
+    font-family: "DM Sans", sans-serif;
+    color: var(--ink);
+    background: #f8f7f4;
+}
+
+body {
+    color: var(--ink);
+    background-color: #f8f7f4;
+    background-image: none;
+}
+
+.home-page {
+    background-image:
+        linear-gradient(115deg, rgb(248 247 244 / 94%), rgb(248 247 244 / 82%)),
+        url("./assets/background.jpg");
+}
+
+.site-header {
+    border-color: var(--line);
+}
+
+.brand {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: -.045em;
+}
+
+.brand span,
+.eyebrow,
+.hero-card h1 span,
+.nav-link[aria-current="page"],
+.school-arrow,
+.grade-result {
+    color: var(--accent);
+}
+
+.nav-link {
+    border-radius: 0;
+    color: #555b5e;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link[aria-current="page"] {
+    border-color: var(--line);
+    background: #eeeee8;
+}
+
+.hero-card h1,
+.grading-card h1 {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    letter-spacing: -.035em;
+}
+
+.hero-card h1 span {
+    display: inline;
+}
+
+.hero-description,
+.page-description,
+.home-note {
+    color: var(--muted);
+}
+
+.school-options {
+    gap: 0;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.school-card {
+    min-height: 130px;
+    border: 0;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    background: #fff;
+}
+
+.school-card:hover,
+.school-card:focus-visible {
+    transform: none;
+    border-color: var(--line);
+    background: #f0f1eb;
+}
+
+.school-number,
+.school-name {
+    color: var(--muted);
+}
+
+.school-name {
+    color: var(--ink);
+}
+
+.grading-card {
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+.score-field label {
+    color: var(--ink);
+}
+
+.score-field input {
+    border-color: var(--line);
+    border-radius: 0;
+    background: #fbfbf8;
+    color: var(--ink);
+    font-family: "JetBrains Mono", monospace;
+    font-variant-numeric: tabular-nums;
+}
+
+.score-field input::placeholder {
+    color: #9a9c97;
+}
+
+.score-field input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgb(49 89 73 / 12%);
+}
+
+.submit-button {
+    border: 1px solid var(--accent);
+    border-radius: 0;
+    background: var(--accent);
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+}
+
+.submit-button:hover,
+.submit-button:focus-visible {
+    background: #254737;
+}
+
+@media (max-width: 640px) {
+    .school-options {
+        border-left: 0;
+    }
+
+    .school-card {
+        border-left: 1px solid var(--line);
     }
 }
